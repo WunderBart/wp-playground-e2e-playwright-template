@@ -5,7 +5,7 @@ test.describe("WordPress", () => {
     await page.goto("/wp-admin");
 
     await expect(
-      page.getByRole("heading", { name: "Dashbord" }),
+      page.getByRole("heading", { name: "Dashboard" }),
     ).toBeVisible();
   });
 });
