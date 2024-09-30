@@ -1,0 +1,23 @@
+{
+  "name": "wp-playground-e2e-playwright-template",
+  "version": "1.0.0",
+  "description": "A basic configuration template for running WordPress E2E tests using Playwright and WP Playground.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @wp-playground/cli server --login",
+    "test:e2e": "npx playwright test --config='tests/e2e/playwright.config.ts'",
+    "test:e2e:debug": "npm run test:e2e -- --debug",
+    "test:e2e:chromium": "npm run test:e2e -- --project=chromium",
+    "test:e2e:firefox": "npm run test:e2e -- --project=firefox",
+    "test:e2e:webkit": "npm run test:e2e -- --project=webkit"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.7.4",
+    "@wordpress/e2e-test-utils-playwright": "^0.9.0",
+    "@wp-playground/cli": "^0.9.45",
+    "prettier": "3.3.3"
+  }
+}
