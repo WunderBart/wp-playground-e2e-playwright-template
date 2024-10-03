@@ -7,7 +7,7 @@ A basic configuration template for running WordPress E2E tests using Playwright 
 Install dependencies:
 
 ```sh
-nvm use
+nvm install
 npm install
 npx playwright intstall
 ```
